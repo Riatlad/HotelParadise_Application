@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:id="@+id/tv_Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Username"
+        android:inputType="text"/>
+
+    <TextView
+        style="@style/TextViewStyle"
+        android:id="@+id/tv_Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contraseña"
+        android:layout_below="@id/et_Username"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/et_Password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_Password"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"/>
+
+    <Button
+        style="@style/ButtonStyle"
+        android:id="@+id/bLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_Password"
+        android:layout_marginTop="16dp"
+        android:text="Iniciar sesión"/>
+
+    <TextView
+        style="@style/Theme.Gestion"
+        android:id="@+id/textViewError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:layout_below="@id/bLogin"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>
